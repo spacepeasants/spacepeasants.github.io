@@ -14,6 +14,8 @@ html, body, main, nav, h1, h2, h3, h4, h5, h6, p, a {
 body, html, section, h1, h2, h3, h4, h5, h6, p, a {
   margin: 0px;
   font-family: product-sans;
+  text-decoration: none;
+  color: black;
 }
 
 body, html, section {
@@ -27,6 +29,7 @@ nav {
   position: fixed;
   background: white;
   width: 100%;
+  z-index: 10000000;
 }
 
 .nav-logo {
@@ -131,15 +134,55 @@ section {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  padding: 50px 0px;
 }
 .profile {
-  padding: 50px;
-  font-size: 0.8em;
-  letter-spacing: 0.1
-  em;
+  padding: 30px 30px 60px 30px;
+  border-radius: 10px;
+  font-size: 0.6em;
+  letter-spacing: 0.1em;
+  background: #9F9F9F;
+  margin: 20px;
+  transition: transform .2s; /* Animation */
 }
 
+.profile:hover {
+ transform: scale(0.9);
+}
+
+.profile:hover .avatar {
+  transform: scale(1.2);
+}
+
+.profile:hover h4 {
+  transform: translateY(30px);
+}
+
+.profile h4 {
+  transition: transform .2s; /* Animation */
+}
 .avatar {
   width: 150px;
-  border-radius: 7px;
+  border-radius: 10px;
+  margin-bottom: 5px;
+  transition: transform .2s; /* Animation */
+
+}
+
+
+
+
+
+.construction {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 50%;
+  font-size: 1.7em;
+  letter-spacing: 0.1em;
+  align-items: center;
+  background: #9F2222;
+}
+.boop {
+  text-align: center;
 }
